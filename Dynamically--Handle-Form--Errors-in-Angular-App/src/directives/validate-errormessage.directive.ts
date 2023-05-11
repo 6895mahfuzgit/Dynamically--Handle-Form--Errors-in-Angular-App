@@ -20,7 +20,7 @@ export class ValidateErrormessageDirective implements OnInit {
 
     this.uiControl?.control?.valueChanges.subscribe(data=>{
 
-     if(!this.uiControl.touched || !this.uiControl.dirty){
+     if(!this.uiControl.touched && !this.uiControl.dirty){
       return;
      }
 
