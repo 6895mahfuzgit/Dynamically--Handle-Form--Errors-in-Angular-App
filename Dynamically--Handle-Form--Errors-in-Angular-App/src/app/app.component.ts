@@ -14,8 +14,8 @@ export class AppComponent {
   }
 
   form = this.fb.group({
-    name1: ['', [Validators.required, Validators.minLength(1)]],
-    name2: ['', [Validators.required, Validators.minLength(2)]],
+    name1: ['', [Validators.required, Validators.minLength(2)]],
+    name2: ['', [Validators.required, Validators.minLength(3)]],
   });
 
 }

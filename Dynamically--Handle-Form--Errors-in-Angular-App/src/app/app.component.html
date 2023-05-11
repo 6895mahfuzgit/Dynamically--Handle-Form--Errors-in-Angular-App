@@ -13,27 +13,13 @@
 
       <!-- here, Normaly we check for error exists
       and the cotrol becomes dirty or not -->
-      <span *ngIf="form.controls.name1.hasError('required')
-                    && form.controls.name1.dirty">
-        This is required.
-      </span>
-      <span *ngIf="form.controls.name1.hasError('minlength')
-                    && form.controls.name1.dirty">
-        Minimun 1 character is required.
-      </span>
+
     </div>
 
     <div>
       <legend>Name2: </legend>
       <input formControlName="name2" name="name2" id="name2" type="text" />
-      <span *ngIf="form.controls.name2.hasError('required')
-      && form.controls.name2.dirty">
-        This is required.
-      </span>
-      <span *ngIf="form.controls.name2.hasError('minlength')
-      && form.controls.name2.dirty">
-        Minimun 2 character is required.
-      </span>
+
     </div>
   </div>
 </form>
