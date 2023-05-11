@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import * as fromDirectives from '../directives';
 import * as fromComponents from '../components';
+import * as fromPipes from '../pipes';
 
 @NgModule({
   declarations: [
     AppComponent,
     ...fromDirectives.directives,
-    ...fromComponents.components
+    ...fromComponents.components,
+    ...fromPipes.pipes
   ],
   imports: [
     BrowserModule,

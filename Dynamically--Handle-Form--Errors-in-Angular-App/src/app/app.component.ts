@@ -8,7 +8,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class AppComponent {
   title = 'Dynamically--Handle-Form--Errors-in-Angular-App';
-
+  name1=""
   constructor(private fb: FormBuilder) {
 
   }
