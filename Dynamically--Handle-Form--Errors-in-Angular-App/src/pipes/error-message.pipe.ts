@@ -1,4 +1,4 @@
-import { ERROR_MESSAGES } from './../constans/error.messages';
+import { ERROR_MESSAGES } from '../constraint/error.messages';
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
