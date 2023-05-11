@@ -1,0 +1,50 @@
+<h3>Reactive form</h3>
+<div>
+
+</div>
+<form [formGroup]="form">
+
+  <div class=".container">
+    <div>
+      <legend>Name1: </legend>
+
+
+      <input formControlName="name1" name="name1" id="name1" type="text">
+
+      <!-- here, Normaly we check for error exists
+      and the cotrol becomes dirty or not -->
+      <span *ngIf="form.controls.name1.hasError('required')
+                    && form.controls.name1.dirty">
+        This is required.
+      </span>
+      <span *ngIf="form.controls.name1.hasError('minlength')
+                    && form.controls.name1.dirty">
+        Minimun 1 character is required.
+      </span>
+    </div>
+
+    <div>
+      <legend>Name2: </legend>
+      <input formControlName="name2" name="name2" id="name2" type="text" />
+      <span *ngIf="form.controls.name2.hasError('required')
+      && form.controls.name2.dirty">
+        This is required.
+      </span>
+      <span *ngIf="form.controls.name2.hasError('minlength')
+      && form.controls.name2.dirty">
+        Minimun 2 character is required.
+      </span>
+    </div>
+  </div>
+</form>
+
+<hr>
+<!--
+  <h3>Template-driven form</h3>
+<div>
+
+</div>
+<div>
+  <legend>Name1:  </legend>
+  <input [(ngModel)]="name1" required  minlength="3"/>
+</div>  -->
